@@ -1,7 +1,7 @@
 package com.formacionbdi.usuarios.service;
 
 import com.formacionbdi.commons.services.CommonService;
-import com.formacionbdi.usuarios.models.Alumno;
+import com.formacionbdi.commonsalumnos.models.Alumno;
 
 
 public interface AlumnoService extends CommonService<Alumno> {

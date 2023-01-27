@@ -1,4 +1,4 @@
-package com.formacionbdi.usuarios.models;
+package com.formacionbdi.commonsalumnos.models;
 
 
 import lombok.Data;

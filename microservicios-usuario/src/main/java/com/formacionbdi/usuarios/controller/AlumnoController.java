@@ -1,7 +1,7 @@
 package com.formacionbdi.usuarios.controller;
 
 import com.formacionbdi.commons.controllers.CommonController;
-import com.formacionbdi.usuarios.models.Alumno;
+import com.formacionbdi.commonsalumnos.models.Alumno;
 import com.formacionbdi.usuarios.service.AlumnoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
