@@ -59,6 +59,12 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.formacionbdi.commons-alumnos</groupId>
+			<artifactId>commons-alumnos</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
