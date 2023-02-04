@@ -7,10 +7,7 @@ import com.formacionbdi.cursos.repository.CursoRepository;
 import com.formacionbdi.cursos.services.CursoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -51,4 +48,10 @@ public class CursoController extends CommonController<Curso, CursoService> {
         return ResponseEntity.status(HttpStatus.CREATED).body(service.save(cursoDb));
 
     }
+
+    @GetMapping("/alumno/{id}")
+    public ResponseEntity<?> buscarPorAlumnoId(@PathVariable Long id){
+            return ResponseEntity.ok(service.findCursoByAlumnoId(id));
+    }
+
 }

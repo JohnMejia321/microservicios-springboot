@@ -8,4 +8,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class CursoServiceImpl extends CommonServiceImp<Curso, CursoRepository> implements CursoService {
 
+
+    @Override
+    public Curso findCursoByAlumnoId(Long id) {
+        return repository.findCursoByAlumnoId(id);
+    }
 }
